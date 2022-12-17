@@ -1,0 +1,14 @@
+{
+  "name": "exercise",
+  "version": "1.0.0",
+  "description": "Exercise to determine how often employees coincide in the office",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Andres Lozada",
+  "license": "ISC",
+  "devDependencies": {
+    "vitest": "^0.25.8"
+  }
+}
