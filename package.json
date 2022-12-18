@@ -2,13 +2,20 @@
   "name": "exercise",
   "version": "1.0.0",
   "description": "Exercise to determine how often employees coincide in the office",
-  "main": "app.js",
+  "main": "app.ts",
   "scripts": {
-    "test": "test"
+    "test": "vitest",
+    "start": "node --loader ts-node/esm src/app.ts",
+    "coverage": "vitest run --coverage"
   },
   "author": "Andres Lozada",
   "license": "ISC",
   "devDependencies": {
+    "typescript": "^4.9.4",
     "vitest": "^0.25.8"
+  },
+  "type": "module",
+  "dependencies": {
+    "ts-node": "^10.9.1"
   }
 }
