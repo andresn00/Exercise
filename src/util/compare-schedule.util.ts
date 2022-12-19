@@ -13,7 +13,6 @@ export const compareEmployeesSchedule = (employeesSchedule: EmployeeSchedule[]) 
                 coincidedTimes,
                 coincidedHours
             }
-            console.log('coincidedSchedule', coincidedSchedule)
             coincidedScheduleArr.push(coincidedSchedule)
         })
     })
