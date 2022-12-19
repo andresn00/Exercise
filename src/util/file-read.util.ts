@@ -37,8 +37,9 @@ export const formatEmployeeScheduleLine = (line: string): EmployeeSchedule => {
         }
         return dayFormatted
     })
+    const employee = { name: employeeName }
     return {
-        employeeName,
+        employee,
         schedule
     }
 }

@@ -1,5 +1,7 @@
+import { Employee } from "./employee.model"
+
 export interface EmployeeSchedule {
-    employeeName: string
+    employee: Employee
     schedule: DaySchedule[]
 }
 
@@ -10,5 +12,12 @@ export interface DaySchedule {
 
 export interface TimeFrame {
     startTime: string
-    endTime: string    
+    endTime: string
+}
+
+export interface CoincidedSchedule {
+    employeeA: Employee
+    employeeB: Employee
+    coincidedTimes: number
+    coincidedHours: number
 }
