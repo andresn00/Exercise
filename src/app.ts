@@ -1,7 +1,7 @@
 import { defaultInputDataPath } from '../constants.js'
 import { CoincidedSchedule } from './model/schedule.model.js'
-import { compareEmployeesSchedule } from './util/compare-schedule.util.js'
-import { getEmployeesScheduleData } from './util/file-read.util.js'
+import { compareEmployeesSchedule } from './util/employee-schedule.util.js'
+import { getEmployeesScheduleData } from './util/employee-schedule.util.js'
 
 const main = async () => {
     try {
