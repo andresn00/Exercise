@@ -1,5 +1,5 @@
 export const toMilliseconds = (hrs: number, min: number) => {
-    return hrs * 60 * 60 + min * 60
+    return hrs * 60 * 60 * 1000 + min * 60 * 1000
 }
 
 export const toMillisecondsFromStr = (timeStr: string) => {
@@ -7,4 +7,4 @@ export const toMillisecondsFromStr = (timeStr: string) => {
     return toMilliseconds(+hrs, +min)
 }
 
-export const toHours = (milliseconds: number) => milliseconds / 60 / 60
+export const toHours = (milliseconds: number) => milliseconds / 1000 / 60 / 60
