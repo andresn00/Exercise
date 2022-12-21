@@ -3,7 +3,7 @@ import { readFileData } from "./file-read.util.js";
 import { toHours, toMilliseconds, toMillisecondsFromStr } from "./time.util.js";
 
 export const getEmployeesScheduleData = (filePath: string): Promise<EmployeeSchedule[]> => {
-    return readFileData<EmployeeSchedule>(filePath, formatEmployeeScheduleLine)
+    return readFileData(filePath, formatEmployeeScheduleLine)
 }
 
 const formatEmployeeScheduleLine = (line: string): EmployeeSchedule => {

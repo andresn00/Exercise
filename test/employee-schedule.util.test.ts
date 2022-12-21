@@ -1,6 +1,14 @@
-import { describe, expect, test } from "vitest";
+import { describe, expect, expectTypeOf, test } from "vitest";
+import { defaultInputDataPath } from "../constants";
 import { EmployeeSchedule } from "../src/model/schedule.model";
-import { compareEmployeesSchedule } from "../src/util/employee-schedule.util";
+import { compareEmployeesSchedule, getEmployeesScheduleData } from "../src/util/employee-schedule.util";
+
+describe('Should get Employees Schedules data from input file', () => {
+    test('Should return an array of EmployeeSchedule', async () => {
+        const filePath = defaultInputDataPath
+        expectTypeOf(await getEmployeesScheduleData(filePath)).toEqualTypeOf<EmployeeSchedule[]>()
+    })
+})
 
 describe('Should compare schedules between employees', () => {
     const employeesScheduleMock: EmployeeSchedule[] = [
